@@ -25,10 +25,10 @@ function App() {
           </div>
           <p className=' text-7xl'>27°C</p>
         </div>
-        <img src={sun} className=' absolute w-52 h-52 top-4 right-20 ' />
-        <img src={clouds} className=' absolute w-96 h-64 opacity-30 top-8 left-10' />
-        <img src={clouds1} className=' absolute w-96 h-64 opacity-30 top-4 right-1 ' />
-        <img src={clouds2} className=' absolute w-96 h- opacity-30 top-2 left-1 ' />
+        <img src={sun} className=' absolute w-52 h-52 top-4 right-20' />
+        <img src={clouds} className=' absolute w-96 h-64 opacity-30 top-8 left-10 object1' />
+        <img src={clouds1} className=' absolute w-96 h-64 opacity-30 top-4 right-1 object2' />
+        <img src={clouds2} className=' absolute w-96 h- opacity-30 top-2 left-1 object3' />
       </div>
       <div className='w-1/2 h-full text-zinc-700 overflow-auto'>
         <div className='flex ml-20 items-end'>
@@ -39,7 +39,7 @@ function App() {
         </div>
         <div className='m-20 mt-12'>
           <h2 className='font-bold text-2xl'>Weather Details</h2>
-          <div className='flex flex-col gap-5 mt-6'>
+          <div className='flex flex-col gap-5 mt-8'>
             <div className='flex items-center justify-between text-xl'>
               <span className='font-extralight text-zinc-500'>Cloudy</span>
               <span className='font-bold'>75%</span>
@@ -70,16 +70,12 @@ function App() {
           <h2 className='font-bold text-2xl'>Next Day</h2>
           <div className=' flex flex-col gap-5 mt-6'>
             <div className='flex items-center justify-between text-xl'>
-              <span className='font-extralight text-zinc-500'>Monday</span>
-              <span className='font-bold'>May 9</span>
+              <span className='font-extralight text-zinc-500'>Monday, 13May</span>
+              <img className='w-12 h-12 mt-5' src="//cdn.weatherapi.com/weather/64x64/day/176.png" />
             </div>
             <div className='flex items-center justify-between text-xl'>
-              <span className='font-extralight text-zinc-500'>Tuesday</span>
-              <span className='font-bold'>May 10</span>
-            </div>
-            <div className='flex items-center justify-between text-xl'>
-              <span className='font-extralight text-zinc-500'>Wednesday</span>
-              <span className='font-bold'>May 11</span>
+              <span className='font-extralight text-zinc-500'>Tuesday, 14May</span>
+              <img className='w-12 h-12 mt-5' src="//cdn.weatherapi.com/weather/64x64/day/302.png" />
             </div>
           </div>
         </div>
