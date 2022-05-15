@@ -8,8 +8,8 @@ import sun from './sun.png';
 function App() {
 
   return (
-    <div className="flex h-screen ">
-      <div className='relative w-1/2 h-full bg-gradient-to-b from-blue-500 to-cyan-500 flex flex-col justify-center p-16 text-white'>
+    <div className="flex h-screen">
+      <div className='relative w-1/2 h-full bg-gradient-to-b from-blue-500 to-cyan-500 flex flex-col justify-center p-16 text-white overflow-hidden'>
         <p className='text-xl ml-0.5 text-white'>Thursday, May 12</p>
         <h1 className=' text-5xl mt-12'>Good Night, Chang !</h1>
         <p className='mt-4 text-xl ml-0.5'>Here's your weather telecast for today. </p>
@@ -26,7 +26,7 @@ function App() {
           <p className=' text-7xl'>27°C</p>
         </div>
         <img src={sun} className=' absolute w-52 h-52 top-4 right-20' />
-        <img src={clouds} className=' absolute w-96 h-64 opacity-30 top-8 left-10 object1' />
+        <img src={clouds} className=' absolute w-96 h-64 opacity-30 top-8 left-10 object1' /> 
         <img src={clouds1} className=' absolute w-96 h-64 opacity-30 top-4 right-1 object2' />
         <img src={clouds2} className=' absolute w-96 h- opacity-30 top-2 left-1 object3' />
       </div>
